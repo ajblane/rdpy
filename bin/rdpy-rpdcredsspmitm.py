@@ -143,6 +143,8 @@ def help():
 def errE(x):
     raise Exception(x)
 if __name__ == '__main__':
+    app=None
+
     import qt4reactor
     qt4reactor.install()
     from twisted.internet import reactor
