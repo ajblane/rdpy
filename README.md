@@ -7,7 +7,10 @@ RDPY is a pure Python implementation of the Microsoft RDP (Remote Desktop Protoc
 RDPY provides the following RDP and VNC binaries :
 * RDP Man In The Middle proxy which is used for doing credential relay in credssp.
 
-Relaying the credentials is useful in the context of cve-2018-0886 
+Relaying the credentials is useful in the context of cve-2018-0886.
+Please refer to credssp library for the exploit demo.
+https://github.com/preempt/credssp
+
 ## Build
 
 RDPY is fully implemented in python. It is dependent upon pyQt4. 
@@ -29,7 +32,7 @@ $ pip install twisted pyopenssl qt4reactor service_identity rsa pyasn1 impacket
 $ python rdpy/setup.py install
 ```
 This should technically work. Although, this won't be useful for any exploitation. 
-Please refer to credssp library. 
+Please refer to credssp library. https://github.com/preempt/credssp
 
 
 
