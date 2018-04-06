@@ -29,7 +29,7 @@ $ pip install twisted pyopenssl qt4reactor service_identity rsa pyasn1 impacket
 $ python rdpy/setup.py install
 ```
 This should technically work. Although, this won't be useful for any exploitation. 
-Please refer to credssp library. 
+Please refer to credssp library. https://github.com/preempt/credssp
 
 
 
