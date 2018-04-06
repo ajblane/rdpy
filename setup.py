@@ -3,16 +3,14 @@
 import setuptools
 from distutils.core import setup, Extension
 
-setup(name='rdpy',
-	version='1.3.2',
+setup(name='rdpycredssp',
+	version='1.0.0',
 	description='Remote Desktop Protocol in Python',
-	long_description="""
-	RDPY is a pure Python implementation of the Microsoft RDP (Remote Desktop Protocol) protocol (Client and Server side). RDPY is built over the event driven network engine Twisted.
-	RDPY provide RDP and VNC binaries : RDP Man In The Middle proxy which record session, RDP Honeypot, RDP screenshoter, RDP client, VNC client, VNC screenshoter, RSS Player
-	""",
-	author='Sylvain Peyrefitte',
-	author_email='citronneur@gmail.com',
-	url='https://github.com/citronneur/rdpy',
+	long_description="""RDPY is a pure Python implementation of the Microsoft RDP (Remote Desktop Protocol) protocol (client and server side). RDPY is built over the event driven network engine Twisted. RDPY support standard RDP security layer, RDP over SSL and NLA authentication (through ntlmv2 authentication protocol).
+    RDPY provides the following RDP and VNC binaries :
+    RDP Man In The Middle proxy which is used for doing credential relay in credssp.""",
+	author='Sylvain Peyrefitte,Eyal Karni',
+	author_email='citronneur@gmail.com, ekarni@preempt.com',
 	packages=[
 			'rdpy', 
 			'rdpy.core',
