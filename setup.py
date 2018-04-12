@@ -22,7 +22,7 @@ setup(name='rdpycredssp',
 			'rdpy.protocol.rdp.t125',
 		],
 	scripts = [
-			'./bin/rdpy-rpdcredsspmitm.py',
+			'./bin/rdpy-rdpcredsspmitm.py',
 		],
 	install_requires=[
 			'twisted',

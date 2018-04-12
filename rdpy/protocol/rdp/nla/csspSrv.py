@@ -122,7 +122,14 @@ class CSSPSrv(object):
         if self.state==States.Krb0 or self.state==States.Krb1:
             ret=self.HandleKrb(negToken)
 
-            if tsreq['pubKeyAuth'].hasValue():
+            pubKeyExists=False
+            try:
+                tsreq.getComponentByName('pubKeyAuth')
+                pubKeyExists=True
+            except:
+                pass
+
+            if pubKeyExists and tsreq['pubKeyAuth']!=None and tsreq['pubKeyAuth'].hasValue():
                 cmd=str(tsreq['pubKeyAuth'])
                 self._relay.sendCmd(cmd)
                 self.state=States.Final
