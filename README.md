@@ -22,9 +22,8 @@ Example for Debian based systems :
 sudo apt-get install python-qt4
 ```
 
-#### Windows
+Then:
 
-### Build
 
 ```
 $ git clone https://github.com/preempt/rdpy.git rdpy
